@@ -1,0 +1,140 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #3e434c;
+  font-family: "Myriad Pro", Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+
+input, button {
+  font-family: inherit;
+}
+
+input::placeholder {
+  color: #6f7278;
+}
+
+fieldset {
+  border: none;
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+
+/******************************************************************************
+ ** Container
+ ******************************************************************************/
+
+.container {
+  width: 475px;
+  padding: 60px 45px 36px;
+  background-color: #f1f2f4;
+  border-radius: 4px;
+  box-shadow: inset 0 -2px 0 #c5c5c8, 0 1px 3px rgba(0, 0, 0, .75);
+}
+
+
+/******************************************************************************
+ ** Heading
+ ******************************************************************************/
+
+.heading {
+  text-align: center;
+  font-size: 36px;
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+
+
+/******************************************************************************
+ ** Form
+ ******************************************************************************/
+
+.form__control {
+  position: relative;
+  height: 85px;
+}
+
+.form__input {
+  width: 100%;
+  height: 85px;
+  background-color: #e5e7e9;
+  outline: none;
+  font-size: 24px;
+  padding: 0 15px 0 70px;
+  border: none;
+  border: 1px solid #bec0c2;
+}
+
+.form__control_email .form__input {
+  border-radius: 3px 3px 0 0;
+  box-shadow: inset 0 2px 0 rgba(0, 0, 0, .05);
+}
+
+.form__control_password .form__input {
+  border-radius: 0 0 3px 3px;
+  border-top: none;
+  box-shadow: inset 0 1px 0 #fff, 0 2px 0 #fff;
+}
+
+.form_error .form__input {
+  border-color: red;
+}
+
+.form__icon {
+  position: absolute;
+  background-image: url("../img/icons.png");
+  background-repeat: no-repeat;
+}
+
+.form__control_email .form__icon {
+  width: 32px;
+  height: 22px;
+  background-position: 0 0;
+  top: 31px;
+  left: 24px;
+}
+
+.form__control_password .form__icon {
+  width: 24px;
+  height: 32px;
+  background-position: -32px -22px;
+  top: 26px;
+  left: 28px;
+}
+
+
+/******************************************************************************
+ ** Button
+ ******************************************************************************/
+
+.btn {
+  margin-top: 25px;
+  width: 100%;
+  text-align: center;
+  font-size: 36px;
+  height: 74px;
+  line-height: 74px;
+  border: 1px solid #2a8b7b;
+  border-radius: 3px;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+  background: #36b7a6 url("../img/btn-pattern.jpg") repeat-x;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), 0 1px 3px rgba(0, 0, 0, .25);
+}
